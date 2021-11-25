@@ -17,6 +17,11 @@
   --light-color-text: #606770;
   --button-link: #e0e2e8;
   --stories-bg: #090909;
+  --icon-circle-bg: linear-gradient(
+    0deg,
+    rgb(67, 65, 49) 0%,
+    rgba(107, 110, 114, 1) 100%
+  );
 }
 
 body {
@@ -168,4 +173,96 @@ header {
 .fa-facebook-messenger .header__notification-bubble {
   top: -20px;
   right: -15px;
+}
+
+.content-area--feed {
+  padding: 90px 15px 20px;
+  display: flex;
+}
+.sidenav {
+  width: 25%;
+}
+
+.sidenav__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sidenav__item-img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.sidenav__item-title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.sidenav__item-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.sidenav__item-notification {
+  color: var(--fb-blue);
+  margin-top: 5px;
+  font-size: 0.75rem;
+  display: block;
+  font-weight: 300;
+}
+.sidenav__item-notification-circle {
+  background: var(--fb-blue);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.sidenav__item-icon--circle {
+  background: var(--button-link);
+  border-radius: 50%;
+  font-size: 0.9rem;
+}
+.sidenav__item-icon--circle-white {
+  background: var(--icon-circle-bg);
+  border-radius: 50%;
+  font-size: 1rem;
+  width: 35px;
+  height: 35px;
+}
+
+.sidenav__item-icon .fas,
+.sidenav__item-icon .fab {
+  color: var(--fb-blue);
+}
+.sidenav__item-icon--circle .fas,
+.sidenav__item-icon--circle .fab {
+  color: var(--fb-black);
+}
+
+.sidenav__item-icon--circle-white .fas,
+.sidenav__item-icon--circle-white .fab {
+  color: var(--fb-white);
+}
+
+.sidenav__line {
+  height: 2px;
+  background: var(--button-link);
+  margin-bottom: 15px;
+  display: block;
+}
+.sidenav__heading-title {
+  display: block;
+  color: var(--light-color-text);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
